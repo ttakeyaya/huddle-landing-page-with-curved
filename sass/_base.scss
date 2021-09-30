@@ -1,0 +1,44 @@
+/** 
+-Import Google Fonts and Define font variables
+-Define color varibalbes
+-Reset CSS properties(margin, padding)
+*/
+
+// Google Fonts
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;1,700&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Poppins:ital,wght@0,700;1,700&display=swap");
+
+// Font variables
+$poppins: "Poppins", sans-serif;
+$opensans: "Open Sans", sans-serif;
+
+// Colors
+:root {
+  --color-pink: hsl(322, 100%, 66%);
+  --color-light-pink: hsl(321, 100%, 78%);
+  --color-light-red: hsl(0, 100%, 63%);
+  --color-dark-cyan: hsl(192, 100%, 9%);
+  --color-pale-blue: hsl(207, 100%, 98%);
+}
+
+// Resetting
+* {
+  padding: 0;
+  margin: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+body {
+  font-family: $opensans;
+}
