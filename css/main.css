@@ -1,0 +1,285 @@
+/** 
+-Import Google Fonts and Define font variables
+-Define color varibalbes
+-Reset CSS properties(margin, padding)
+*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Poppins:ital,wght@0,700;1,700&display=swap");
+:root {
+  --color-pink: hsl(322, 100%, 66%);
+  --color-light-pink: hsl(321, 100%, 78%);
+  --color-light-red: hsl(0, 100%, 63%);
+  --color-dark-cyan: hsl(192, 100%, 9%);
+  --color-pale-blue: hsl(207, 100%, 98%);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 7.8rem;
+  padding-right: 6.3rem;
+  padding-left: 6.3rem;
+}
+@media screen and (max-width: 500px) {
+  .header {
+    padding: 2.4rem 2.4rem 0 2.4rem;
+  }
+}
+
+.main {
+  position: relative;
+  margin-top: 22.5rem;
+}
+.main .page-main {
+  margin-right: 2vw;
+  margin-left: 2vw;
+  margin-bottom: 13.3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  color: var(--color-dark-cyan);
+}
+.main .page-main__title {
+  font-family: "Poppins", sans-serif;
+  font-size: 4.8rem;
+}
+.main .page-main__body {
+  margin-top: 2.6rem;
+  margin-bottom: 4.9rem;
+  max-width: 60rem;
+  font-size: 2rem;
+  line-height: 3rem;
+  font-weight: 600;
+  opacity: 0.9;
+}
+.main .page-main__img {
+  margin-top: 12rem;
+  margin-bottom: 12rem;
+}
+.main .page-main__img > img {
+  max-width: 100%;
+}
+.main .page-main__lists {
+  list-style-type: none;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  position: relative;
+}
+.main .page-main__lists__item {
+  font-size: 9.6rem;
+  font-weight: 700;
+}
+.main .page-main__lists__item .item-d {
+  display: block;
+  font-weight: 400;
+  font-size: 2.4rem;
+}
+.main .page-main__lists__item.communities::before {
+  position: absolute;
+  content: url("../images/icon-communities.svg");
+  top: -50%;
+}
+.main .page-main__lists__item.message::before {
+  position: absolute;
+  content: url("../images/icon-messages.svg");
+  top: -50%;
+}
+.main .feature {
+  margin-bottom: 220px;
+  position: relative;
+  width: 100vw;
+  margin-top: 300px;
+  position: relative;
+}
+.main .feature .first-top {
+  width: 100%;
+  transform: translateY(4%);
+}
+.main .feature .first-bottom {
+  width: 100%;
+}
+.main .feature__container {
+  background-color: var(--color-pale-blue);
+  max-width: 100%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  padding-left: 5rem;
+}
+.main .feature__container__body {
+  margin-right: 10rem;
+  margin-left: 2rem;
+  min-width: 52rem;
+}
+.main .feature__container__body.conversation-body {
+  margin-left: 10rem;
+}
+.main .feature__container.conversation-container {
+  flex-direction: row-reverse;
+}
+.main .feature__container__img {
+  width: 56rem;
+}
+.main .feature__container__img > img {
+  width: 100%;
+}
+.main .feature__title {
+  font-size: 4rem;
+  margin-bottom: 2.6rem;
+}
+.main .feature__content {
+  font-size: 1.6rem;
+}
+.main .cta-container {
+  text-align: center;
+}
+.main .cta-container__title {
+  font-size: 4rem;
+}
+.main .cta-container .cta-btn {
+  margin-top: 2.4rem;
+  display: inline-block;
+}
+
+.footer {
+  position: relative;
+  width: 100vw;
+  margin-top: 45rem;
+  background-color: var(--color-dark-cyan);
+  color: white;
+  display: flex;
+  justify-content: space-around;
+}
+.footer .container {
+  margin-top: 20px;
+}
+.footer .footer-logo {
+  fill: white;
+}
+.footer::before {
+  position: absolute;
+  content: "";
+  width: 100vw;
+  background: url("../images/bg-footer-top-desktop.svg");
+  height: 200px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  transform: translateY(-100%);
+}
+.footer .address-container {
+  margin-left: 12rem;
+  margin-bottom: 21.5rem;
+  font-size: 1.4rem;
+  max-width: 34rem;
+}
+.footer .address-container .svg-container {
+  margin-bottom: 2rem;
+}
+.footer .address-container .address {
+  margin-top: 2.4rem;
+  font-size: 1.6rem;
+}
+.footer .address-container .address__icon {
+  margin-bottom: 1.6rem;
+}
+.footer .address-container .social-media {
+  margin-top: 5rem;
+  list-style-type: none;
+  display: flex;
+}
+.footer .address-container .social-media__icon {
+  margin-right: 2rem;
+  cursor: pointer;
+}
+.footer .address-container .social-media .icon-size {
+  font-size: 2rem;
+}
+.footer .address-container .social-media .twitter {
+  background-color: white;
+  border-radius: 0.4rem;
+}
+.footer .address-container .social-media .icon-twitter {
+  color: var(--color-dark-cyan);
+  font-size: 1.8rem;
+}
+.footer .newsletter {
+  max-width: 51.2rem;
+  font-size: 1.4rem;
+}
+.footer .newsletter__title {
+  font-size: 2.4rem;
+}
+.footer .newsletter__body {
+  margin-top: 1.8rem;
+  margin-bottom: 4rem;
+}
+.footer .newsletter__form input[type=email] {
+  padding: 1rem 2rem;
+  border-radius: 1rem;
+  border: none;
+}
+.footer .newsletter__form .form-btn {
+  cursor: pointer;
+  background-color: var(--color-pink);
+  color: white;
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 1rem;
+  margin-left: 1rem;
+}
+
+.btn-link {
+  cursor: pointer;
+  text-decoration: none;
+  text-transform: capitalize;
+}
+
+.free-trial-link {
+  font-size: 1.6rem;
+  color: var(--color-pink);
+  border: 1px solid var(--color-pink);
+  padding: 0.9rem 3.2rem;
+  border-radius: 2rem;
+  box-shadow: 1px 1px 9px var(--color-light-pink);
+}
+
+.get-started-link {
+  font-size: 2rem;
+  color: white;
+  background-color: var(--color-light-pink);
+  padding: 2.5rem 10rem;
+  border-radius: 10rem;
+  font-weight: 600;
+  line-height: 3rem;
+  filter: drop-shadow(2px 5px 5px #979797);
+}
+
+/*# sourceMappingURL=main.css.map */

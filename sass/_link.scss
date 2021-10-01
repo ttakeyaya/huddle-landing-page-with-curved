@@ -1,0 +1,23 @@
+.btn-link {
+  cursor: pointer;
+  text-decoration: none;
+  text-transform: capitalize;
+}
+.free-trial-link {
+  font-size: 1.6rem;
+  color: var(--color-pink);
+  border: 1px solid var(--color-pink);
+  padding: 0.9rem 3.2rem;
+  border-radius: 2rem;
+  box-shadow: 1px 1px 9px var(--color-light-pink);
+}
+.get-started-link {
+  font-size: 2rem;
+  color: white;
+  background-color: var(--color-light-pink);
+  padding: 2.5rem 10rem;
+  border-radius: 10rem;
+  font-weight: 600;
+  line-height: 3rem;
+  filter: drop-shadow(2px 5px 5px #979797);
+}
