@@ -18,7 +18,7 @@
 
   <header class="header">
     <p class="header__logo">
-      <img src="./images/logo.svg" alt="huddle">
+      <img src="./images/logo.svg" alt="huddle" class="logo">
     </p>
     <p class="header__link">
       <a href="#" class="btn-link free-trial-link">Try it free</a>
@@ -54,54 +54,59 @@
       </ul>
     </section>
 
-    
     <section class="feature">
+      <div class="wave-top-one"></div>
+      
+      <div class="bg-blue">
+        <div class="feature__container">
+          <div class="feature__container__texts">
+            <h3 class="feature__title">Grow Together</h3>
+            <p class="feature__body">Generate meaningful discussions with your audience and build a strong, loyal community. 
+              Think of the insightful conversations you miss out on with a feedback form. 
+            </p>
+          </div>
+          <figure class="img-container">
+            <img src="images/illustration-grow-together.svg" class="section-image">
+          </figure>
+        </div>
+      </div>
+      
+      <div class="wave-bottom-one"></div>
+    </section>
+    <section class="feature">
+        <div class="feature__container flowing__container">
+          <div class="feature__container__texts-flowing-conversation">
+            <h3 class="feature__title">Flowing Conversations</h3>
+            <p class="feature__body">You wouldn't paginate a conversation in real life, so why do it online? Our threads have 
+              just-in-time loading for a more natural flow.
+            </p>
+          </div>
+          <figure class="img-container">
+            <img src="images/illustration-flowing-conversation.svg" alt="flowing-conversations" class="section-image">
+          </figure>
+        </div>
+    </section>
+    <section class="feature">
+      <div class="wave-top-two"></div>
+      
+      <div class="bg-blue">
+        <div class="feature__container">
+          <div class="feature__container__texts">
+            <h3 class="feature__title">Your Users</h3>
+            <p class="feature__body">It takes no time at all to integrate Huddle with your app's authentication solution. This means, 
+              once signed in to your app, your users can start chatting immediately. 
+            </p>
+          </div>
+          <figure class="img-container">
+            <img src="images/illustration-your-users.svg" class="section-image">
+          </figure>
+        </div>
+      </div>
+      
+      <div class="wave-bottom-two"></div>
+    </section>
 
-      <img src="./images/bg-section-top-desktop-1.svg" class="first-top">
-      <div class="feature__container">
-        <div class="feature__container__body">
-          <h2 class="feature__title">Grow Together</h2>
-          <p class="feature__content">
-            Generate meaningful discussions with your audience and build a strong, loyal community. 
-            Think of the insightful conversations you miss out on with a feedback form. 
-          </p>
-        </div>
-        <figure class="feature__container__img">
-          <img src='./images/illustration-grow-together.svg'>
-        </figure>
-      </div>
-      <img src='./images/bg-section-bottom-mobile-1.svg' class="first-bottom">
-    </section>
-    <section class="feature">
-      <div class="feature__container conversation-container">
-        <div class="feature__container__body conversation-body">
-          <h2 class="feature__title">Flowing Conversations</h2>
-          <p class="feature__content">
-            You wouldn't paginate a conversation in real life, so why do it online? Our threads have 
-        just-in-time loading for a more natural flow.
-          </p>
-        </div>
-        <figure class="feature__container__img">
-          <img src='./images/illustration-flowing-conversation.svg'>
-        </figure>
-      </div>
-    </section>
-    <section class="feature wave-bg-blue-bottom bg-blue">
-      <div class="feature__container">
-        <div class="feature__container__body">
-          <h2 class="feature__title">Your Users</h2>
-          <p class="feature__content">
-            It takes no time at all to integrate Huddle with your app's authentication solution. This means, 
-        once signed in to your app, your users can start chatting immediately.
-          </p>
-        </div>
-        <figure class="feature__container__img">
-          <img src='./images/illustration-your-users.svg'>
-        </figure>
-      </div>
-    </section>
-    
-    
+
     <section class="cta-container">
       <h3 class="cta-container__title">Ready To Build Your Community?</h3>
       <a href="#" class="btn-link get-started-link cta-btn">
@@ -146,8 +151,7 @@
     </div>
     
     <div class="newsletter container">
-      <section>
-        
+      <section> 
         <h4 class="newsletter__title">
           Newsletter
         </h4>
@@ -157,12 +161,16 @@
         </p>
       </section>
       <form class="newsletter__form">
-        <label for="email">
-          <input type="email" name="email">
-        </label>
-        <button type="submit" class="form-btn">
-          Subscribe
-        </button>
+        <div class="form-elems-container">
+          <label for="email">
+            <input type="email" name="email">
+          </label>
+          <div class="btn-container">
+            <button type="submit" class="form-btn">
+              Subscribe
+            </button>
+          </div>
+        </div>
       </form>
     </div>
   </footer>

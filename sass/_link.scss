@@ -10,6 +10,10 @@
   padding: 0.9rem 3.2rem;
   border-radius: 2rem;
   box-shadow: 1px 1px 9px var(--color-light-pink);
+  @media screen and(max-width:885px) {
+    font-size: 1rem;
+    padding: 0.4rem 2.3rem;
+  }
 }
 .get-started-link {
   font-size: 2rem;
@@ -20,4 +24,9 @@
   font-weight: 600;
   line-height: 3rem;
   filter: drop-shadow(2px 5px 5px #979797);
+  @media screen and(max-width:885px) {
+    font-size: 1.2rem;
+    padding: 1rem 3rem;
+    line-height: 1.8rem;
+  }
 }
