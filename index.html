@@ -160,13 +160,16 @@
           send you spam or pass on your email address
         </p>
       </section>
-      <form class="newsletter__form">
+      <form class="newsletter__form" name="subscribe">
         <div class="form-elems-container">
           <label for="email">
             <input type="email" name="email">
+            <div class="warning">
+              <p>check your email please</p>
+            </div>
           </label>
           <div class="btn-container">
-            <button type="submit" class="form-btn">
+            <button type="submit" class="form-btn" name="submitBtn">
               Subscribe
             </button>
           </div>
@@ -182,5 +185,6 @@
     </p>
   </div> -->
   <!-- </div> -->
+  <script src="./js/app.js"></script>
 </body>
 </html>

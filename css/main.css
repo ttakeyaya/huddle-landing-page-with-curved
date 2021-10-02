@@ -480,6 +480,11 @@ body {
   }
 }
 
+.warning {
+  color: red;
+  display: none;
+}
+
 .btn-link {
   cursor: pointer;
   text-decoration: none;
