@@ -27,7 +27,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Solution](https://your-solution-url.com)
+- Solution URL: [Solution](https://github.com/ttakeyaya/huddle-landing-page-with-curved)
 - Live Site URL: [Live](https://ttakeyaya.github.io/huddle-landing-page-with-curved/)
 
 ## My process
